@@ -1,50 +1,27 @@
 import React from "react";
-import "./projects.css"; // Import the CSS file for styling
+import "./projects.css";
 
-const Projects = ({darkMode}) => {
+function Projects() {
   const projects = [
-    {
-      title: "E-commerce Website",
-      description: "An E-commerce website developed using React, featuring product listings, a shopping cart, and checkout functionality.",
-      link: "#", // Add link to the live project or GitHub repo
-    },
-    {
-      title: "Portfolio Website",
-      description: "A personal portfolio website created with React to showcase my skills, projects, and achievements.",
-      link: "#", // Add link to the live project or GitHub repo
-    },
-    {
-      title: "User Authentication System",
-      description: "A user authentication system built with Spring Boot, including login, registration, and session management features.",
-      link: "#", // Add link to the live project or GitHub repo
-    },
-    {
-      title: "Student Management System",
-      description: "A Student Management System developed using React, JSP, and Servlets to manage student records, enrollments, and grades.",
-      link: "#", // Add link to the live project or GitHub repo
-    },
+    { title: "E-Commerce Website", description: "A full-stack e-commerce site using React and Spring Boot." },
+    { title: "Portfolio Website", description: "A personal portfolio built with React." },
+    { title: "Student Management System", description: "A CRUD application using React, JSP, and Servlets." },
   ];
 
   return (
-    <section id="projects" className={`projects-section min-vh-75    ${darkMode ? "about-section-dark" : "about-section-light"}`}>
-      <div className="container">
-        <h2>Projects</h2>
-        <div className="row">
-          {projects.map((project, index) => (
-            <div className="col-md-6 col-lg-4" key={index}>
-              <div className="project-card">
-                <h4>{project.title}</h4>
-                <p>{project.description}</p>
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                  View Project
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
+    <section id="projects" className="projects-section">
+      <h2>Projects</h2>
+      <div className="project-cards p-5">
+        {projects.map((project, index) => (
+          <div key={index} className="project-card">
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <button type="button" class="btn btn-info m-7">View Project</button>
+          </div>
+        ))}
       </div>
     </section>
   );
-};
+}
 
 export default Projects;

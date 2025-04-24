@@ -1,42 +1,32 @@
 import React from "react";
-import "./About.css"; // Optional for custom styles
+import "./About.css";
+//import profilePhoto from "../assets/photo.jpg"; // Replace with your actual photo
+//import resume from "../assets/resume.pdf";
 
-const AboutSection = ({ darkMode }) => {
+function About() {
   return (
-    <section id="about" className={`py-5  ${darkMode ? "about-section-dark" : "about-section-light"}`}>
-      <div className="container text-center">
-        {/*<h2 className="mb-4">About Me</h2>*/}
-
-        <div className="row justify-content-center align-items-center">
-          <div className="col-md-4 mb-4">
-            {/* Replace the src URL with your actual photo path */}
-            <img
-              src="./varsha.jpeg"
-              alt="My Profile"
-              className="img-fluid rounded-circle shadow"
-              style={{ maxWidth: "200px" }}
-            />
-          </div>
-
-          <div className="col-md-6">
-            <h3 className="fw-bold mb-3">Varsha Zalte</h3>
-            <p className="lead">
-              I'm a dedicated full-stack developer skilled in React and Spring Boot. I love turning complex ideas into elegant and efficient code.
-            </p>
-
-            {/* Replace resume.pdf with your actual file path */}
-            <a
-              href="/varsha resume.pdf"
-              download
-              className="btn btn-primary mt-3"
-            >
-              Download Resume
-            </a>
-          </div>
+    <section id="about" className="about-section">
+      <div className="about-content container text-center">
+         <div className="row justify-content-center">
+         <div className="col-4  text-white p-5 m-2">
+                <img src="/varsha.jpeg" 
+                 alt="Profile" 
+                 className="profile-photo" />
+         </div>
+        <div className="about-text col-7  text-white p-5 m-4">
+          <h2>Varsha Zalte</h2>
+          <p>
+            I'm a passionate full-stack developer specializing in React and Spring Boot.
+            I build responsive, high-performance applications with a clean and intuitive user experience.
+          </p>
+          <a href="/varsha resume.pdf" download className="btn-download">
+            Download Resume
+          </a>
         </div>
+         </div>
       </div>
     </section>
   );
-};
+}
 
-export default AboutSection;
+export default About;

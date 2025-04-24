@@ -1,32 +1,31 @@
-/* Navbar.css */
-
-/* Base styles for navbar */
-.custom-navbar {
-  transition: all 0.3s ease;
-  backdrop-filter: blur(5px); /* Optional: adds nice blur effect */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #463C7B;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
-/* 🌞 Light Mode Styles */
-.custom-navbar.light-mode {
-  background-color: #add8e6; /* Light Blue (you can change this to #ffc0cb for pink) */
-  opacity: 0.9;
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
-/* 🌚 Dark Mode Styles */
-.custom-navbar.dark-mode {
-  background-color: #1c1c1c; /* Dark shade */
-  opacity: 0.95;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
-/* Optional hover effects for nav links */
-.custom-navbar .nav-link {
-  transition: color 0.3s ease;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.custom-navbar.light-mode .nav-link:hover {
-  color: #000;
-}
-
-.custom-navbar.dark-mode .nav-link:hover {
-  color: #fff;
+.nav-links a:hover {
+  color: #00bcd4;
 }
