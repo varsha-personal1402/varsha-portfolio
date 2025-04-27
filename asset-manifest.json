@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/varsha-portfolio/static/css/main.308d8c6b.css",
-    "main.js": "/varsha-portfolio/static/js/main.b711fe02.js",
+    "main.js": "/varsha-portfolio/static/js/main.9aec1ca6.js",
     "index.html": "/varsha-portfolio/index.html",
     "main.308d8c6b.css.map": "/varsha-portfolio/static/css/main.308d8c6b.css.map",
-    "main.b711fe02.js.map": "/varsha-portfolio/static/js/main.b711fe02.js.map"
+    "main.9aec1ca6.js.map": "/varsha-portfolio/static/js/main.9aec1ca6.js.map"
   },
   "entrypoints": [
     "static/css/main.308d8c6b.css",
-    "static/js/main.b711fe02.js"
+    "static/js/main.9aec1ca6.js"
   ]
 }
