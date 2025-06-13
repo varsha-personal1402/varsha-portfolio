@@ -1,68 +1,59 @@
-import React, { useState } from "react";
-import "./contact.css";
+import React, { useState } from 'react';
+import './contact.css';
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can integrate this with your backend or an API here
-    console.log("Form submitted:", formData);
-    alert("Thank you for contacting me!");
-    setFormData({ name: "", email: "", message: "" }); // Reset form
+    // You can integrate backend/API here
+
+    // Show confirmation popup
+    setShowPopup(true);
+    setTimeout(() => setShowPopup(false), 3000);
+
+    // Clear form
+    setFormData({ name: '', email: '', message: '' });
   };
 
   return (
-    <section id="contact" className="contact-section">
-      <h2>Contact Me</h2>
+    <section className="contact-section bg-gradient">
+            {showPopup && <div className="popup">Message Sent Successfully ✅</div>}
 
-      <form onSubmit={handleSubmit} className="contact-form">
-        <label>
-          Name:
-          <input
-            type="text"
-            name="name"
-            required
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Your name"
-          />
-        </label>
-
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            required
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="your@email.com"
-          />
-        </label>
-
-        <label>
-          Message:
-          <textarea
-            name="message"
-            required
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Your message"
-          />
-        </label>
-
+      <h2 className="text-center text-white mb-4">Get in Touch</h2>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        ></textarea>
         <button type="submit">Send Message</button>
       </form>
+
     </section>
   );
 }

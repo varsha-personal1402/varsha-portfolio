@@ -1,73 +1,55 @@
-/* App.css */
-
-body.light-mode {
-  background-color: #f8f9fa;
-  color: #212529;
-  transition: all 0.3s ease-in-out;
+:root {
+  --primary: #191b39;
+  --accent: #8f94fb;
+  --bg: #48288da0;
+  --bg-soft-blue: #072e72;
+  --bg-lavender: #230c38;
+  --footer-dark: #2a8898;
+  --text-dark: #2c3e50;
+  --white: #ffffff;
+  --hover-dark: #3b7f8d6d;
 }
 
-body.dark-mode {
-  background-color: #121212;
-  color: #f8f9fa;
-  transition: all 0.3s ease-in-out;
+body {
+  background-color: var(--bg);
+  color: var(--text-dark);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.content {
-  padding: 2rem;
-}
-/* Smooth transitions for sections */
-section {
-  transition: all 0.3s ease-in-out;
+h1, h2, h3, h4, h5 {
+  color: var(--primary);
 }
 
-h2 {
-  font-weight: bold;
-}
-
-p.lead {
-  font-size: 1.1rem;
-}
-#about img {
-  transition: transform 0.3s ease;
-}
-
-#about img:hover {
-  transform: scale(1.05);
-}
-/* Project card hover effect */
-.card:hover {
-  transform: translateY(-5px);
-  transition: all 0.3s ease-in-out;
-}
-
-/* Section spacing */
-section {
-  transition: all 0.3s ease-in-out;
-}
-/* Default Light Theme */
-.App {
-  background-color: #ffffff;
-  color: #333;
-}
-
-/* Dark Mode Styling */
-.App.dark {
-  background-color: #222;
-  color: #f4f4f4;
-}
-
-.theme-toggle-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
+.btn-primary {
+  background: var(--primary);
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.theme-toggle-btn:hover {
-  background-color: #45a049;
+.btn-primary:hover {
+  background: var(--hover-dark);
+}
+
+.bg-gradient {
+  background: var(--bg-soft-blue);
+  color: white;
+}
+.bg-light-gray {
+  background-color: var(--bg);
+}
+.bg-white {
+  background-color: var(--white);
+}
+.bg-blue-soft {
+  background-color: var(--bg-soft-blue);
+}
+.bg-lavender {
+  background-color: var(--bg-lavender);
+  color: wheat;
+}
+.bg-dark-footer {
+  background-color: var(--footer-dark);
+  color: var(--white);
 }
