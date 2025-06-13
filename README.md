@@ -6,7 +6,7 @@ Welcome to my personal portfolio website built using **React** and **Spring Boot
 
 ## 🚀 Live Demo
 
-🌐 [View Live Site](https://your-live-link.com)
+🌐 [View Live Site](https://varsha-personal1402.github.io/varsha-portfolio/)
 
 ---
 
