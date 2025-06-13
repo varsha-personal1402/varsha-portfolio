@@ -34,7 +34,7 @@ Welcome to my personal portfolio website built using **React** and **Spring Boot
 
 Have a project or opportunity? Let's connect!
 
-📧 Email: your.email@example.com  
+📧 Email: varshazalte1402@gmail.com  
 🌐 Portfolio: [your-portfolio-link.com](https://github.com/varsha-personal1402)  
 📱 LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/varsha-zalte-69ba08263)
 
