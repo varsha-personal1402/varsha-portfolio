@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/varsha-portfolio/static/css/main.e811a60b.css",
+    "main.js": "/varsha-portfolio/static/js/main.b950a068.js",
+    "static/js/453.1407b060.chunk.js": "/varsha-portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/varsha_image.png": "/varsha-portfolio/static/media/varsha_image.dceda0c83c0bd1b3c97f.png",
+    "index.html": "/varsha-portfolio/index.html",
+    "main.e811a60b.css.map": "/varsha-portfolio/static/css/main.e811a60b.css.map",
+    "main.b950a068.js.map": "/varsha-portfolio/static/js/main.b950a068.js.map",
+    "453.1407b060.chunk.js.map": "/varsha-portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e811a60b.css",
+    "static/js/main.b950a068.js"
+  ]
+}
