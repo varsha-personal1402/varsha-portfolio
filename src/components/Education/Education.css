@@ -1,0 +1,11 @@
+.card-e{
+    background: linear-gradient(to right, #8aa6b2, #4a7482, #2c5364);
+    color: black;
+    border-radius: 5px;
+    height: 150px;
+    margin-top: 40px;
+    text-align: start;
+}
+.card-body{
+    margin-top: 30px;
+}

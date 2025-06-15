@@ -1,0 +1,14 @@
+.about-section {
+  padding: 100px 0;
+ /* background: linear-gradient(to right, #1e1e1e, #2a2a2a);*/
+  background: linear-gradient(to top, #12082d, #041f29, #264d5e);
+  color: white;
+}
+
+.about-section h2 {
+  font-weight: bold;
+}
+
+.about-section ul {
+  padding-left: 1.5rem;
+}
